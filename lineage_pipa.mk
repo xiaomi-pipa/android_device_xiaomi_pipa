@@ -8,7 +8,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit some common lineage stuff.
+# Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Inherit from pipa device
@@ -25,6 +25,14 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := 23043RP34G
 
 PRODUCT_CHARACTERISTICS := tablet
+
+# Evolution X flags
+WITH_GMS := true
+BUILD_BCR := false
+TARGET_HAS_UDFPS := false
+TARGET_INCLUDE_ACCORD := false
+BYPASS_CHARGE_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
