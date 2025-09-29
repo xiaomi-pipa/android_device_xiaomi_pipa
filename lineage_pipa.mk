@@ -14,18 +14,11 @@ $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 # Inherit from pipa device
 $(call inherit-product, device/xiaomi/pipa/device.mk)
 
-# Inherit keys
-$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
-
-# Derpfest
-DERPFEST_BUILD_TYPE := Official
-WITH_GMS := true
-
 PRODUCT_NAME := lineage_pipa
 PRODUCT_DEVICE := pipa
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Pad 6
+PRODUCT_MODEL := 23043RP34G
 
 PRODUCT_CHARACTERISTICS := tablet
 TARGET_SUPPORTS_QUICK_TAP := false
