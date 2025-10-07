@@ -16,7 +16,11 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_SCREEN_DENSITY := 400
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/xiaomi/pipa.config vendor/debugfs.config
+TARGET_KERNEL_CONFIG += \
+    vendor/kona-perf_defconfig \
+    vendor/debugfs.config \
+    vendor/xiaomi/sm8250-common.config \
+    vendor/xiaomi/pipa.config
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
